@@ -1,0 +1,100 @@
+@import "reset.css";
+
+body {
+  background-color: rgb(211, 228, 211);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding : 20px 0px;
+}
+
+.canvas {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  margin-bottom: 20px;
+}
+
+.controls__btns button {
+  all: unset;
+  cursor: pointer;
+  margin: 0px 4px;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.controls__btns button:active {
+  transform: scale(0.96);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  border-radius: 25px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.controls .controls__range {
+  margin-bottom: 20px;
+}
+
+/* 기본모습 설정 */
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* 크롬, 사파리용 설정  */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #c9c9c9;
+  border-radius: 1px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #c9c9c9, 0px 0px 1px #c9c9c9;
+  border: 1px solid #cccccc;
+  height: 25px;
+  width: 9px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #c9c9c9;
+}
