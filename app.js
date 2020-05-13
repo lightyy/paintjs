@@ -78,7 +78,7 @@ function handleCM(event) {
 }
 
 function hadleSaveClick(event){
-  const image = canvas.toDataURL("image/jpeg");
+  const image = canvas.toDataURL("");
   // console.log(image);
   const link = document.createElement("a");
   link.href = image;
